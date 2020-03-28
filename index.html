@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Rețele de comunicații industriale</title>
+  <title>Rețele industriale de comunicații</title>
   <meta name="description" content="Rețele industriale de comunicații">
   <meta name="author" content="Vișovan Mihai">
   <style>
@@ -31,6 +31,9 @@
         font-size: 0.875em;
         font-family: sans-serif;
     }
+    a:hover{
+        text-decoration: underline;
+    }
     a:visited {
         color: #0b0080;
     }
@@ -52,19 +55,43 @@
         padding-right: 0.5em;
         color: #222;
     }
+    .mw-headline {
+        margin-top: 2em;
+    }
   </style>
 </head>
 
 <body class="body-content">
 
     <h1 class="firstHeading">Rețele industriale de comunicații</h1>
+    <hr> </hr>
+
+    <div id="mw-content-text" lang="ro" dir="ltr" class="mw-content-ltr">
+        <div class="mw-parser-output">
+        <p>O <b>rețea industrială de comunicație </b> 
+            reprezintă elementul de bază pentru orice arhitectură de sistem de automatizare, deoarce acesta oferă un mijloc eficient de interschimbare a datelor, 
+            o gestiune mai bună a acestora și o flexibilitate pentru conectarea diferitelor dispozitive. O dată cu utilizarea rețelelor de comunicații digitale în industrie, 
+            în ultimul deceniu, s-a  observat o îmbunătățire a preciziei și a integrității semnalului digital end-to-end.
+        </p>
+        <p>
+            Aceste tipuri de rețele care pot fi atât LAN (Local Area Network, care este utilizată în spațiile de dimensiune redusă) cât și WAN (Wide Area Network, 
+            care este utilizată ca un sistem global) au permis comunicarea unor cantități vaste de date utilizând un număr limitat de canale. 
+            <b> Rețelele industriale </b> au dus și la implementarea diferitelor protocoale de comunicație între controllerele digitale, dispozitivele field,
+             diferite unelte de automatizare precum și a sistemelor externe.  
+        </p>
+
     <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading">
         <div class="toctitle" lang="ro" dir="ltr">
             <h2 id="mw-toc-heading">Cuprins</h2> 
         </div>
         <ul>
             <li class="toclevel-1 tocsection-1"><a href="#Scurt istoric"><span class="tocnumber">1</span> <span class="toctext">Scurt istoric</span></a></li>
-            <li class="toclevel-1 tocsection-2"><a href="#Clasificare_după_topologie"><span class="tocnumber">2</span> <span class="toctext">Clasificare după topologie</span></a></li>
+            <li class="toclevel-1 tocsection-2"><a href="#Nivelele ierarhice intr-o retea industriala de comunicatii"><span class="tocnumber">2</span> <span class="toctext">Nivelele ierarhice intr-o retea industriala de comunicatii</span></a></li>
+            <ul>
+                <li class="toclevel-2 tocsection-6"><a href="#Field level"><span class="tocnumber">2.1</span> <span class="toctext">Field level</span></a></li>
+                <li class="toclevel-2 tocsection-7"><a href="#Control level"><span class="tocnumber">2.2</span> <span class="toctext">Control level</span></a></li>
+                <li class="toclevel-2 tocsection-8"><a href="#Information level"><span class="tocnumber">2.3</span> <span class="toctext">Information level</span></a></li>
+            <ul>
             <li class="toclevel-1 tocsection-3"><a href="#Clasificare_după_modul_de_conectare"><span class="tocnumber">3</span> <span class="toctext">Clasificare după modul de conectare</span></a></li>
             <li class="toclevel-1 tocsection-4"><a href="#Clasificare_după_relațiile_funcționale_(arhitectura_de_rețea)"><span class="tocnumber">4</span> <span class="toctext">Clasificare după relațiile funcționale (arhitectura de rețea)</span></a></li>
             <li class="toclevel-1 tocsection-5"><a href="#Clasificare_după_aria_de_acoperire"><span class="tocnumber">5</span> <span class="toctext">Clasificare după aria de acoperire</span></a>
@@ -99,12 +126,163 @@
         </ul>
     </div>
 
-    <h2>
-        <span class="mw-headline" id="Scurt istoric">Scurt istoric</span>
-    </h2>
+    <h2 class="mw-headline" id="Scurt istoric">Scurt istoric</h2>
     <hr> </hr>
-    <p>Există rețele de calculatoare centralizate și descentralizate.
-        Printre <a href="/w/index.php?title=Re%C8%9Bea_descentralizat%C4%83&amp;action=edit&amp;redlink=1" class="new" title="Rețea descentralizată — pagină inexistentă">rețelele descentralizate</a> se numără ca exemplu rețelele <a href="/wiki/ARPAnet" class="mw-redirect" title="ARPAnet">ARPAnet</a>, <a href="/wiki/Metanet" title="Metanet">Metanet</a> și <a href="/w/index.php?title=Freenet&amp;action=edit&amp;redlink=1" class="new" title="Freenet — pagină inexistentă">Freenet</a>.
+    <p>
+        În ultimele decenii, creșterea puterii și scăderea prețurilor sistemelor electronice au influențat cu mult toate domeniile în care activează omul.
+        Același efect se resimte și în cadrul <b> rețelelor industriale de comunicații  </b> prin prisma faptului că partea de procesare și fabricație nu 
+        se mai realizează mecanic (manual sau prin intermediul controllerelor hidraulice) ci a început să migreze spre utilizarea circuitelor de control cablate,
+        a releelor și a traductoarelor. 
     </p>
+    <p> Problema cu noile sisteme este aceea că ocupau mult spațiu având dimensiuni destul de ridicate, 
+        fiind necesari uneori kilometrii întregi de cablu atât pentru interconexiunea dispozitivelor de pe același nivel din ierarhie precum (actuatori, senzori, etc.)
+        precum și a furniza conectivitate diferitelor nivele. De aceea, o dată cu invenția microprocesoarelor și a circuitelor integrate, diverse funcționalități
+        puteau fi înlocuite printr-un singur controller digital.  Migrarea către sistemele digitale a creat necesitatea de noi protocoale de comunicație pentru
+        nivelul field din ierarhia rețelelor industriale de comunicații precum și între controllere. 
+        Aceste protocoale de comunicație sunt referite ca fiind protocoale fieldbus. 
+    </p> 
+    <p> 
+        La începutul anilor 1960, un calculator digital a fost pentru prima dată utilizat ca un controller digital. Acest termen de <i> direct digital control (DDC)</i>
+        a fost utilizat în sensul în care calculatorul are control direct asupra procesului cu care interacționează. Totuși, aplicarea unui mini-calculator în perioada 
+        aceea a fost destul de costisitoare pentru majoritatea problemelor de control. Pe la mijlocul anilor ’60, a fost dezvoltat PLC-ul (programmable logic controller)
+        și a înlocuit controllerele bazate pe relee, având un numar relativ limitat de funcții de control. Odată cu expansiunea utilizării calculatoarelor digitale și a
+        tehnologiilor asociate, <b> rețelele industriale de comunicații </b> au început să fie dezvoltate (sau convertite) prin intermediul transmisiei digitale, fiind
+        utilizate în industrie o dată cu prima conexiune realizată între două calculatoare.
+    </p> 
+    <p>
+        La mijlocul anilor ’70, primul distributed computer control system (DCCS) a fost anunțat de către Honeywell ca un sistem ierarhic de control cu număr ridicat de
+        microprocesoare. De la introducerea din 1970, conceptul de DCCS a fost distribuit la scară largă în multe sisteme industriale automatizate precum sisteme de fabricare, 
+        sisteme de control a centralelor electrice, etc. Instalarea sistemelor de control distribuite sau înlocuirea sistemelor centralizate de control devine o decizie
+        comună pentru gestiunea marilor companii.
+    </p>
+    <p>
+        Utilizarea rețelelor locale (LAN) pentru a interconecta calculatoare și dispozitive de automatizare în sistemele de automatizare industrială și-a câștigat 
+        popularitatea începând cu anul 1980. Capacitatea crescută și costurile scăzute în comunicație oferită de rețelele locale a făcut ca distribuirea părții 
+        computaționale să devină o realitate precum și a serviciilor de automatizare. În prezent, a devenit comună utilizarea rețelelor locale pentru a comunica 
+        cu calculatoarele și cu dispozitivele de automatizare din cadrul altor rețele locale prin intermediul unui gateway făcând parte și fiind interconectate de
+        o rețea globală (WAN).
+    </p>
+    <p>
+        O dată cu creșterea sistemelor de automatizare industriale și a numărului de dispozitive de automatizare, s-a creat o necesitate în vederea furnizării unor 
+        standarde pentru a permite dispozitivelor diferite să fie interconectate într-un mod standardizat. Standardele Open System Interconnection (OSI) permit oricărei 
+        perechi de dispoztiive de automatizare să comunice într-un mod reliable fără să aibă vreun impact producătorul asupra comunicației.
+    </p>
+    <p>
+        <b> Rețelele industriale de comunicații </b> se întind pe o plajă largă de aplicații de fabricație. Rețelele standard industriale care folosesc tehnologii de 
+        comunicație digitală acoperă majoritatea aplicațiilor de fabricație. În multe aplicații, tipul de dispozitive utilizate și performanța acestora determină tipul rețelei.
+        Spre exemplu, în cadrul unei fabrici poate să existe un senzor de proximitate care oferă o informație booleană on/off indicând proximitatea obiectului și o valvă de 
+        control utilizată la rafinarea petrolului care poate furniza funcții de control sofisticate precum temperatura ambientală. Acești parametrii pot deveni extrem de
+        critici, spre exemplu eșuarea rafinării, care pot rezulta în situații periculoase și costisitoare. În mod clar, senzorul de proximitate și valva de control au
+        cerințe diferite de rețea. Deci, tipuri diferite de rețele industriale trebuie să adreseze o varietate largă de necesități și pentru a îndeplini toate cerințele
+        aplicației trebuie să selecteze o rețea potrivită. 
+    </p>
+
+    <h2 class="mw-headline" id="Nivelele ierarhice intr-o retea industriala de comunicatii">Nivelele ierarhice intr-o retea industriala de comunicatii </h2>
+    <hr> </hr>
+    <p>
+        Sistemele industriale de automatizare pot fi foarte complexe și de regulă acestea sunt structurate în mai multe nivele de ierarhizare. Fiecare dintre aceste nivele 
+        ierarhice are un nivel de comunicație corespunzător, care plasează diferite cerințe în cadrul rețelei de comunicație. Rețelele industriale pot fi clasificate în 
+        mai multe categorii diferite în funcție de funcționalitate: 
+        <ol>
+            <li>
+                Field-level networks 
+            </li>
+            <li>
+                Control-level networks
+            </li>
+            <li>
+                Information-level networks
+            </li>
+        </ol>
+    </p>
+    <div>
+        <img src="Imagini/NiveleIerarhie.jpg" style="float:right">
+ 
+        <h2 id="Field level">Field level</h2>
+        <p>
+            Nivelul cel mai de jos din cadrul ierarhiei este field level, care include dispozitivele field precum actuatori sau senzori. Dispozitivele 
+            elementare din acest nivel sunt clasificate ca "element sublevel". Cerința pe care aceste dispozitive trebuie să o îndeplinească este de a
+            transfera date între produsul care se fabrică și procesul tehnic. Datele transmise pot fi atât binare cât și analogice, iar valorile măsurate pot fi 
+            disponibile pentru perioade scurte de timp sau pentru perioade lungi de timp.
+        </p>
+        <p>
+            La nivelul comunicației sunt utilizate la scară largă, interfețele paralele, cu cabluri multiple, cele seriale precum 20mA current loop. Standardele
+            de comunicație serială precum RS232C, RS422, RS485 sunt cele mai comune și utilizate protocoale împreună standardul paralel de comunicație IEEE488.
+        </p>
+        <img src="Imagini/DiferenteRS.jpg" style="align-items:left">
+        <p>
+            Diferențele majore între aceste 3 tipuri de interfețe sunt:
+            <ul>
+                <li>
+                    RS232 este full-duplex, iar RS485 respectiv RS422 sunt half-duplex.
+                </li>
+                <li>
+                    Calculatorul este echipat deja cu o interfață RS232, care poate fi utilizată direct, iar pentru comunicația cu RS485 este necesară conectarea
+                    unui adaptor pentru interfața RS232 fără a fi necesară modificarea programului.
+                </li>
+                <li>
+                    RS232 permite doar comunicație unu-la-unu, iar RS-485 permite pana la 128 de transceivere pe bus.
+                </li>
+                <li>
+                    Rata de transmisie în cadrul RS232 este scăzută, având în transmisiile asincrone, bit rate-ul de 20Kbps spre deosebire de RS485 și RS422 unde rata 
+                    maximă de transmisie este 10Mbps.
+                </li>
+                <li>
+                    Distanța maximă de transmisie în cazul RS232 este de aproximat 15 metri, de 3000 metri pentru interfața RS485, respectiv 2000 metri 
+                    pentru interfața RS422.
+                </li>
+            </ul>
+        </p>
+        <p>
+            Rețelele industriale field-level reprezintă o categorie largă, care poate fi distinsă prin caracteristici precum dimensiunea mesajelor și timpul de răspuns.
+            În general, aceste rețele conectează dispozitive inteligente care lucrează împreună într-un mediu distribuit, critic din punct de vedere al timpului.
+            Acestea oferă un nivel ridicat de diagnoză și capabilități de configurare având ca preț utilizarea mai multor resurse precum putere de procesare, inteligență și 
+            bani. La nivelul cel mai "sofisticat", rețelele field-bus utilizează dispozitive cu adevărat inteligente, distribuite de control precum <b> FOUNDATION Fieldbus. </b>
+            Câteva rețele incluse în clasa de fieldbus și devicebus sunt: CANOpen, DeviceNET, FOUNDATION Fieldbus, Interbus-S, Profibus-DB, etc.
+            În prezent, fieldbus este utilizat des pentru transferul de informații la field-level. Din cauza cerințelor legate de timp, care trebuie să fie observate
+            în mod strict într-un proces de automatizare, controllerele de la acest nivel trebuie sa transmită periodic informații la intervale regulate de timp. Iar datele
+            transmise trebuie să fie de dimensiuni cât mai reduse pentru a reduce timpul de transfer acestora pe bus.
+        </p>
+
+        <h2 id="Control level">Control level</h2>
+        <p>
+            La nivelul de control, fluxul de informație constă în principal din încărcarea programelor, a parametrlor și a datelor. Acest nivel este divizat
+            la rândul lui în două sub-nivele și anume <i>Cell sublevel</i>, respectiv<i> Area sublevel</i>.
+        </p>
+        <h3>Cell sublevel</h3>
+        <p>
+            Pentru operațiile realizate la acest subnivel, sincronizarea mașinăriilor și gestionarea evenimentelor pot creea cerințe de a avea timp de răspuns
+            cât mai scurt pe bus. Aceste cerințe real-time nu sunt compatibile cu transferul excesiv de aplicații de program, de aceea este necesară o segmentare
+            adaptivă a mesajelor. Pentru a putea îndeplini cerințele de comunicație în cadrul acestui nivel, sunt utilizate rețele locale (LANs) ca și rețea 
+            de comunicații. După introducerea conceptului de CIM și DCCS, multe companii au început să-și dezvolte rețelele proprii pentru nivelul cell a unui
+            sistem de automatizare.
+        </p>
+        <p>
+            Protcolul Ethernet împreună cu TCP/IP (transmision control protocol/internet protocol) au devenit standardul <i> de facto </i> pentru acest nivel,
+            chiar dacă nu poate furniza o comunicație real-time. Au existat numeroase încercări pentru a furniza o standardizare pentru rețeaua de comunicație de la
+            acest nivel. Astfel, standardul IEEE bazat pe arhitectura OSI a fost dezvoltată și s-a realizat rețeaua Mini-MAP în anul 1980 pentru a furniza o comunicație
+            standard pentru diferite dispozitive a diferiților furnizori. Totodată, câteva fieldbusses pot fi folosite pentru acest nivel.
+        </p>
+        <h3>Area sublevel</h3>
+        <p>
+            Acest subnivel constă din celule combinate în grupuri, fiecare din aceste celule fiind proiectate cu o funcționalitate orientată pe aplicație.
+            Sunt utilizate rețele control-level pentru rețtele peer-to-peer între controllere precum programmable logic controllers (PLCs), sisteme distribuite
+            de control (DCS) și sisteme utilizate pentru interfața om-mașină (HMI). Totodată, pentru coordonare și sincronizarea controlului între unitațile
+            de producție și celulele de fabricație sunt utilizate legături bus. Iar exemple de rețele industriale utilizate pentru bus-urile de control sunt: ControlNet,
+            PROFIBUS-FMS și MAP (în trecut), putând fi utilizate frecvent și Ethernet cu TCP/IP ca un controller bus pentru a conecta dispozitivele de control 
+            de la nivelele superioare cu calculatoarele.
+        </p>
+        <h2>Information level</h2>
+        <p>
+            Nivelul de informație este nivelul cel mai de top din ierarhia specifică unui sistem industrial de automatizare. În cadrul acestui nivel se adună
+            informații de management de la area levels și gestionează întregul sistem de automatizare. La nivelul de informație există rețele la scală largă, 
+            de exemplu Ethernet WAN pentru planificarea fabricării produselor și gestiunea schimbului de informație. Se poate utiliza Ethernet ca gateway pentru
+            conexiunea cu alte rețele industriale.
+        </p>
+
+    </div>
+    
+    <p style="margin-top:200em;">ce</p>
+
 </body>
 </html>

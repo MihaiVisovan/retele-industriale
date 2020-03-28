@@ -1,0 +1,26 @@
+Eric D. Knapp, Joel Thomas Langill,
+Chapter 5 - Industrial Network Design and Architecture,
+Editor(s): Eric D. Knapp, Joel Thomas Langill,
+Industrial Network Security (Second Edition),
+Syngress,
+2015,
+Pages 85-120,
+ISBN 9780124201149,
+https://doi.org/10.1016/B978-0-12-420114-9.00005-8.
+(http://www.sciencedirect.com/science/article/pii/B9780124201149000058)
+Keywords: Ethernet; TCP; IP; Segmentation; OSI model; Principle of least route; Network performance
+
+
+Eric D. Knapp, Joel Thomas Langill,
+Chapter 2 - About Industrial Networks,
+Editor(s): Eric D. Knapp, Joel Thomas Langill,
+Industrial Network Security (Second Edition),
+Syngress,
+2015,
+Pages 9-40,
+ISBN 9780124201149,
+https://doi.org/10.1016/B978-0-12-420114-9.00002-2.
+(http://www.sciencedirect.com/science/article/pii/B9780124201149000022)
+Keywords: industrial security requirements; common recommendations; terminology
+
+Kada, Belkacem & Alzubairi, Ahmed & Tameem, A.Y.. (2019). Industrial Communication Networks and the Future of Industrial Automation. 10.1109/IASEC.2019.8686664. 
