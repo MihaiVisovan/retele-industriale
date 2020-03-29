@@ -1,0 +1,6 @@
+Link-uri: diferente interfete RS: https://www.optcore.net/difference-between-rs-232-rs-422-and-rs-485/
+Definitie FieldBus: https://en.wikipedia.org/wiki/Fieldbus
+Current loop: https://en.wikipedia.org/wiki/Current_loop
+Relee: https://relays.weebly.com/how-relays-work.html
+Toti anii cu toate standardele: https://www.kunbus.com/historical-trends-industrial-communication.html
+Tot site-u ala pentru prezentare: slides https://www.electricaltechnology.org/2016/12/industrial-communication-networks-systems.html
