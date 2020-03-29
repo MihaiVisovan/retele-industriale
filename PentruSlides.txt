@@ -1,0 +1,1 @@
+La scurt istoric - sa dau exemplu cu faptul ca e greu sa indeplinesti conditiile de networking atat pentru un senzor de proximitate, fata de un senzor de tempcare etc.
