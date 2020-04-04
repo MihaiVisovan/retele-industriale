@@ -7,3 +7,7 @@ ISO/OSI si trece direct de la Ethernet la PROFINET.
 
 Pe scurt: se folosete TCP/ip unde are sens, real-time in orice alt caz, iar IRT in situatii critice d.p.d.v al timpului
 cum ar fi miscarea unor diferiti roboti care are o latime de banda rezervate pentru a creste determinismul.
+
+Daca ethernet ar fi comparat cu un tren, telegramele etherCat ar fi compartimentele.
+
+Add gif with functional princple of etherCat

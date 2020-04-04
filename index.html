@@ -882,12 +882,38 @@
                         Fiecăruia din dispozitivele slave îi pot fi asignate una sau mai multe adrese din spațiul global de adrese. Dacă la mai multe dispozitive slave le-au fost asignate adrese din aceeși arie, 
                         toate pot fi adresate cu aceeași datagramă. Masterul decide când și care date pot fi accesate de fiecare slave din rețea. 
                     </p>
-                    <p>
+                    <p style=" margin-bottom:3rem;">
                         După cum se poate vedea în imaginea alăturată, payload-ul din cadrul Ethernet reprezintă cadrul EtherCAT, iar tipul trebuie definit corespunzător. Acest cadru EtherCAT conține un EtherCAT header
                         care constă din 2 bytes. Primul întreg reprezintă un identificator pentru lungime care indică cât de lungă va fi porțiunea de cadru EtherCAT. Cea de-a doua parte a header-ului constă dintr-un bit rezervat, 
                         urmată de un type integer care definește tipul de mesaj, asigurând interpretarea erorilor. După acest header, sunt prezente toate telegramele care vor fi transmise în rețea. Fiecare din aceste telegrame 
                         conțin și ele la rândul lor un header care conțin diferite informații specifice acelei telegrame precum lungime, tipuri de comandă, etc, conțin datele efective și WKC(Working Counter) care funcționează similar cu 
                         FCS (Frame check sequence) utilizat la Ethernet.
+                    </p >
+                </li>
+                <li>
+                    <h3>Caracteristici esențiale</h3>
+                    <p> 
+                        <ul>
+                            <li>
+                                <b>Viteza</b> este unul din avantajele principale ale <b>EtherCAT</b> având o întârziere redusă semnificativ comparată cu o rețea Ethernet standard. Totuși, 
+                                există o oarecare întârizere din cauza citiri și adăugarii de date pe telegramă, nepermițând o transmisie continuă. Un avantaj și un dezvantaj în același timp este 
+                                faptul că rețelele EtherCAT pot fi încetinite dacă este cazul. Unele calculatoare pot să aibă dificultăți în citirea/scrierea prea rapidă a datelor oferite de rețea.
+                            </li>
+                            <li>
+                                <b>Topologia flexibilă</b> permite acestui tip de tehnologie să combine diferite tipuri de topologii precum stea sau magistrală pentru a crea o rețea mai complexă/eficientă. 
+                                Astfel, EtherCAT nu funcționează doar sub forma unui singur subnet ci poate fi extinsă mai departe.
+                            </li>
+                            <li>
+                                <b>Sincronizarea</b> este un aspect important la nivel industrial. Astfel, EtherCAT include un sistem distribuit de ceasuri, reducând și mai mult jitter-ul dintre două transmisii de pachete. 
+                                Acest mecanism este posibil din cauza timestampurilor incluse în fiecare cadru EtherCAT. Fiecare nod atașează un time stamp la fiecare cadru EtherCAT de două ori: o dată când recepționează mesaje 
+                                prin rețea și o dată când se întoarce înapoi la master. Astfel, masterul primește două time stamps pentru fiecare slave. Având aceste informații, masterul poate calcula întârzierile pentru fiecare nod.
+                                Masterul repetă aceste calcule de fiecare dată când transmite cadre, iar pe măsură ce rețeaua funcționează, masterul va primi date extrem de precise. Astfel, topologia inel creează un mecanism de ceasuri distribuite 
+                                incredibil de eficient și care își crește precizia cu fiecare mesaj transmis.
+                            </li>
+                            <li>
+                                <b>Costurile reduse</b> din cauza ușurinței de configurare și în special a numărului relativ redus de echipamente necesare (switch-uri, cabluri, terminatori).
+                            </li>
+                        </ul>
                     </p>
                 </li>
             </ol>
