@@ -1,1 +1,9 @@
-La scurt istoric - sa dau exemplu cu faptul ca e greu sa indeplinesti conditiile de networking atat pentru un senzor de proximitate, fata de un senzor de tempcare etc.
+La scurt istoric - sa dau exemplu cu faptul ca e greu sa indeplinesti conditiile de networking 
+atat pentru un senzor de proximitate, fata de un senzor de tempcare etc.
+
+
+Si atunci.. cum se furnizeaza acest real-time in cazul PROFINET? Ei bine.. PROFINET sare peste 2 nivele din stiva de protcoale
+ISO/OSI si trece direct de la Ethernet la PROFINET.
+
+Pe scurt: se folosete TCP/ip unde are sens, real-time in orice alt caz, iar IRT in situatii critice d.p.d.v al timpului
+cum ar fi miscarea unor diferiti roboti care are o latime de banda rezervate pentru a creste determinismul.
